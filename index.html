@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Colour Scheme Generator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Colour Scheme Generator</h1>
+        <div class="container">
+            <header>
+                <div class="prime-container">
+                    <div id="prime-color">
+                        <input id ="color-pick" type="color"/>
+                    </div>
+                </div>    
+                <select class="dropdown-menu"  id = "dropdown-box">
+                    <option value ="monochrome">Monochrome</option>
+                    <option value ="monochrome-dark">Monochrome-dark</option>
+                    <option value ="monochrome-light">Monochrome-light</option>
+                    <option value ="analogic">Analogic</option>
+                    <option value ="analogic-compliment">Analogic-compliment</option>
+                    <option value ="compliment">Compliment</option>
+                    <option value ="triad">Triad</option>
+                </select>   
+                <button id="scheme-btn">Get colour scheme</button>
+            </header>
+            <main>
+                <div class="color" id="color-1"></div>
+                <div class="color" id="color-2"></div>
+                <div class="color" id="color-3"></div>
+                <div class="color" id="color-4"></div>
+                <div class="color" id="color-5"></div>
+            </main>
+            <footer>
+                <p class="hex" id="hex-1">#1e3485</p>
+                <p class="hex" id="hex-2">#ba1b1d</p>
+                <p class="hex" id="hex-3">#f24333</p>
+                <p class="hex" id="hex-4">#f7f4f3</p>
+                <p class="hex" id="hex-5">#0e0d06</p> 
+            </footer>
+        </div>
+        <script src="module.js" type="module"></script>
+    </body>
+</html>
